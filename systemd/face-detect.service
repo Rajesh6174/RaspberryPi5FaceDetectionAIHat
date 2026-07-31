@@ -1,0 +1,11 @@
+[Unit]
+Description=Hailo AI HAT+ 2 face detection (detection-only, no recognition)
+After=network.target
+
+[Service]
+ExecStart=%h/.local/share/face-detect-aihat/scripts/run-face-detect.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

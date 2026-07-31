@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+
+# Config lives in ~/.config/face-detect-aihat/ by design, not in this repo -
+# this is just a guard in case one ends up here by habit.
+config/detect.env
